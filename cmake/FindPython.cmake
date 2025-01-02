@@ -13,7 +13,6 @@ endif()
 
 set (Python3_USE_STATIC_LIBS "ON")
 find_package(Python3 COMPONENTS Interpreter Development REQUIRED)
-message("Hello World")
 message(STATUS "Python3 specified. Version found: " ${Python3_VERSION})
 set(Python_EXECUTABLE ${Python3_EXECUTABLE})
 message(STATUS "Using Python executable: " ${Python_EXECUTABLE})
