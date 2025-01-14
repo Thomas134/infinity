@@ -189,6 +189,8 @@ elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "^aarch64.*")
     set(ARM64 TRUE)
 elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "^(x86_64|amd64)$")
     set(X86_64 TRUE)
+elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "riscv64")
+    set(RISCV64 TRUE)
 endif()          
 
 #add_definitions(-march=native)
